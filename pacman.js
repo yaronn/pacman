@@ -832,6 +832,7 @@ var PACMAN = (function () {
         startLevel();
     }
 
+    
     function keyDown(e) {
         if (e.keyCode === KEY.N) {
             startNewGame();
@@ -968,7 +969,7 @@ var PACMAN = (function () {
         } else if (state === WAITING && stateChanged) {            
             stateChanged = false;
             map.draw(ctx);
-            dialog("Press N to start a New game");            
+            dialog("Press N or click to start a game");            
         } else if (state === EATEN_PAUSE && 
                    (tick - timerStart) > (Pacman.FPS / 3)) {
             map.draw(ctx);
@@ -986,7 +987,7 @@ var PACMAN = (function () {
             }
         } else if (state === COUNTDOWN) {
             
-            diff = 5 + Math.floor((timerStart - tick) / Pacman.FPS);
+            diff = 1 + Math.floor((timerStart - tick) / Pacman.FPS);
             
             if (diff === 0) {
                 map.draw(ctx);
@@ -1036,6 +1037,8 @@ var PACMAN = (function () {
         canvas.setAttribute("width", (blockSize * 19) + "px");
         canvas.setAttribute("height", (blockSize * 22) + 30 + "px");
 
+      
+
         wrapper.appendChild(canvas);
 
         ctx  = canvas.getContext('2d');
@@ -1083,8 +1086,12 @@ var PACMAN = (function () {
 
         dialog("Press N to Start");
         
-        document.addEventListener("keydown", keyDown, true);
-        document.addEventListener("keypress", keyPress, true); 
+        document.addEventListener("keydown", keyDown, false);
+        document.addEventListener("keypress", keyPress, false); 
+        
+        document.addEventListener("mousedown", function(e) {
+            startNewGame();
+        }, false);
         
         timer = window.setInterval(mainLoop, 1000 / Pacman.FPS);
     };
