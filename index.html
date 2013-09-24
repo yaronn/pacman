@@ -22,13 +22,25 @@
         visibility:hidden
       }
       h1 { font-family: BDCartoonShoutRegular; text-align:center; }
-      body { width:542px; margin:0px auto; font-family:sans-serif; }
+      body { width:1100px; margin:0px auto; font-family:sans-serif; }
       a { text-decoration:none; }
     </style>
 
 
     
     <script>
+        function loadImages() {
+            document.getElementById("demo10").src = "img/demo10.gif"
+            document.getElementById("demo11").src = "img/demo11.gif"
+        }
+        
+        if(window.addEventListener){
+        window.addEventListener('load',loadImages,false); //W3C
+        }
+        else{
+            window.attachEvent('loadImages',install); //IE
+        }
+    
         var anigif_base_url = "https://s3-us-west-2.amazonaws.com/anigif100/anigif/"
     </script>
     <script src="https://s3-us-west-2.amazonaws.com/anigif100/anigif/anigif.min.js"></script>
@@ -36,13 +48,13 @@
         window.anigif.options.selector = "#pacman"
         window.anigif.options.framesPerSecond = 20
         window.anigif.options.onlyLastFrames = 500
-        window.anigif_bar.right = "20%"
-        window.anigif_bar.top = "7%"
+        window.anigif_bar.right = "27%"
+        window.anigif_bar.top = "12%"
     </script>
     
 </head>
 
-<body>
+<bod>
   
   <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -53,95 +65,100 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-  <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+  <a href="https://github.com/yaronn/GifW00t"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
   
     
-    
-  <div style="position: fixed; right: 12%; top: 15%; z-index: 99999; width: 400px;">
-    
-    <div style="margin-bottom: 15px;">
-        <div class="fb-like" data-href="http://s3-us-west-2.amazonaws.com/anigif100/pacman/index.html" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
-        
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="YaronNaveh">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium"></div>
-        
-        <!-- Place this tag after the last +1 button tag. -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-
+     <div style="width: 100%; position:relative; overflow:auto;">
+          <div style="float: left; "> <h1>Gifw00t! <span style="color: rgb(235, 164, 37);">Pacman</span></h1></div>
+          
+          <div style="float: right; margin-top: 10px;">
+              
+                    <div class="fb-like" data-href="http://s3-us-west-2.amazonaws.com/anigif100/pacman/index.html" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                    
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="YaronNaveh">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    
+                    <!-- Place this tag where you want the +1 button to render. -->
+                    <div class="g-plusone" data-size="medium"></div>
+                    
+                    <!-- Place this tag after the last +1 button tag. -->
+                    <script type="text/javascript">
+                      (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+            
+               
+              
+          </div>
+     </div>
+     
+     <div style="margin-top: 120px;">
+             <div style="float: right;">
+                  <div style="z-index: 99999; width: 400px;">
+                    
+                    <b>GifW00t!</b> is a pure-javascript web recorder. <br />
+                    <div style="margin-left: 20px; margin-top: 25px;">
+                    <b>1.</b> Click the record button (on top) <br />
+                    <b>2.</b> Click anywhere in the play surface to start a game <br />
+                    <b>3.</b> After your game click the stop button  <br />
+                    <br />
+                    When the clip is ready click play to see it. In your first time, record just a few seconds so rendering is faster.
+                    <br /><br />
+                    You can use the <b>GifW00t!</b> recorder in any site, even sites written by other people!
+                    <br /><br />
+                    <b>More information: <a href="http://twitter.com/#!/YaronNaveh">@YaronNaveh</a>, <a href="https://github.com/yaronn/anigif">github</a>, <a href="http://webservices20.blogspot.com/">blog</a></b>
+                    <br /><br />
+                    <a href="https://twitter.com/YaronNaveh" class="twitter-follow-button" data-show-count="false">Follow @YaronNaveh</a>
+                    <div>
+                        <div>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
+                    </div>
+                  </div>    
+                
+                    <br /><br />
+                    <div>
+                    <div style=" float: left; width: 220px;">
+                            <img id="demo10" width="150" /><br />  
+                        </div>
+                        <div style="float:right; width: 180px">
+                            <img id="demo11" width="250" /><br />      
+                        </div>
+                    </div>
+                    
+                    <div style="clear: both; font-size: small">
+                    <br />  
+                    Thanks <a href="https://twitter.com/daleharvey/">@daleharvey</a> for the original HTML5 pacman and helicopter!
+                    </div>
+                  </div>
+                  
+            </div>     
+                
+            <div style="float:left;">
+                
+                  <div id="pacman"></div>
+                  
+                  <div style="width:100%;height: 400px;"></div>
+                  
+                  <script src="pacman.js"></script>
+                  <script src="modernizr-1.5.min.js"></script>
+                
+                  <script>
+                
+                    var el = document.getElementById("pacman");
+                
+                    if (Modernizr.canvas && Modernizr.localstorage && 
+                        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+                      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+                    } else { 
+                      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+                        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+                    }
+                  </script>
+            </div>
     </div>
-    
-    <b>GifW00t!</b> is a pure-javascript web recorder. <br />
-    <div style="margin-left: 20px; margin-top: 25px;">
-    <b>1.</b> Click the record button (on top) <br />
-    <b>2.</b> Click anywhere in the play surface to start a game <br />
-    <b>3.</b> After your game click the stop button  <br />
-    <br />
-    When the clip is ready click play to see it. In your first time, record just a few seconds so rendering is faster.
-    <br /><br />
-    You can use <b>GifW00t!</b> recorder in any site, even sites written by other people!
-    <br /><br />
-    <b>More information: <a href="http://twitter.com/#!/YaronNaveh">@YaronNaveh</a>, <a href="https://github.com/yaronn/anigif">github</a>, <a href="http://webservices20.blogspot.com/">blog</a></b>
-    <br /><br />
-    <a href="https://twitter.com/YaronNaveh" class="twitter-follow-button" data-show-count="false">Follow @YaronNaveh</a>
-    <div>
-        <div>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
-    </div>
-  </div>    
-
-    <br /><br />
-    <div>
-    <div style=" float: left; width: 220px;">
-            <img src="img/demo10.gif" width="150" /><br />  
-        </div>
-        <div style="float:right; width: 180px">
-            <img src="img/demo4.gif" width="250" /><br />      
-        </div>
-    </div>
-    
-    <div style="clear: both; font-size: small">
-    <br />  
-    Thanks <a href="https://twitter.com/daleharvey/">@daleharvey</a> for the original HTML5 pacman and helicopter!
-    </div>
-  </div>
-  
-  
-  
-  <div id="shim">shim for font face</div>
-
-  <h1>Gifw00t! <span style="color: rgb(235, 164, 37);">Pacman</span></h1>
-
-  
-
-  <div id="pacman"></div>
-  
-  <div style="width:100%;height: 400px;"></div>
-  
-  <script src="pacman.js"></script>
-  <script src="modernizr-1.5.min.js"></script>
-
-  <script>
-
-    var el = document.getElementById("pacman");
-
-    if (Modernizr.canvas && Modernizr.localstorage && 
-        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
-      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
-    } else { 
-      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
-        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
-    }
-  </script>
-
 </body>
 </html>
