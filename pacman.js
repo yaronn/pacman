@@ -1034,6 +1034,7 @@ var PACMAN = (function () {
             blockSize = wrapper.offsetWidth / 19,
             canvas    = document.createElement("canvas");
         
+        canvas.id="canvas1"
         canvas.setAttribute("width", (blockSize * 19) + "px");
         canvas.setAttribute("height", (blockSize * 22) + 30 + "px");
 
