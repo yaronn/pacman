@@ -1025,7 +1025,7 @@ var PACMAN = (function () {
         if (state !== WAITING && state !== PAUSE) { 
             e.preventDefault();
             e.stopPropagation();
-        }
+        } 
     };
     
     function init(wrapper, root) {
