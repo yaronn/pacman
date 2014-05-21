@@ -744,8 +744,8 @@ Pacman.Audio = function(game) {
         if (!game.soundDisabled()) {
             endEvents[name] = function() { ended(name); };
             playing.push(name);
-            files[name].addEventListener("ended", endEvents[name], true);
-            files[name].play();
+            //files[name].addEventListener("ended", endEvents[name], true);
+            //files[name].play();
         }
     };
 
