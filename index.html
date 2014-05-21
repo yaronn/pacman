@@ -24,12 +24,20 @@
       h1 { font-family: BDCartoonShoutRegular; text-align:center; }
       body { width:1100px; margin:0px auto; font-family:sans-serif; }
       a { text-decoration:none; }
+      
+      .twitter-share-button {
+width: 80px !important;
+}
+
     </style>
 
 
     
     <script>
         function loadImages() {
+            document.getElementById("twitter").src = "img/twitter.png"
+            document.getElementById("blogger").src = "img/blogger.png"
+            document.getElementById("github").src = "img/github.png"
             document.getElementById("demo10").src = "img/demo10.gif"
             document.getElementById("demo11").src = "img/demo11.gif"
         }
@@ -48,8 +56,8 @@
         window.anigif.options.selector = "#canvas1"
         window.anigif.options.framesPerSecond = 20
         window.anigif.options.onlyLastFrames = 500
-        window.anigif_bar.right = "27%"
-        window.anigif_bar.top = "12%"
+        window.anigif_bar.right = "65%"
+        window.anigif_bar.top = "17%"
     </script>
     
 </head>
@@ -70,61 +78,61 @@
 
   
     
-     <div style="width: 100%; position:relative; overflow:auto;">
-          <div style="float: left; "> <h1>Gifw00t! <span style="color: rgb(235, 164, 37);">Pacman</span></h1></div>
+     <div style="width: 100%; position:relative; overflow:auto;display: table; border-spacing: 15px">
           
-          <div style="float: right; margin-top: 10px;">
+          
+          <div style="float: right; margin-top: 10px; margin-right: 117px; vertical-align: middle;">
               
-                    <div class="fb-like" data-href="http://s3-us-west-2.amazonaws.com/anigif100/pacman/index.html" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                    <div style="display: table-cell; width: 80px;" class="fb-like" data-href="http://s3-us-west-2.amazonaws.com/anigif100/pacman/index.html" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                     
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="YaronNaveh">Tweet</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    
-                    <!-- Place this tag where you want the +1 button to render. -->
-                    <div class="g-plusone" data-size="medium"></div>
-                    
-                    <!-- Place this tag after the last +1 button tag. -->
-                    <script type="text/javascript">
-                      (function() {
-                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                        po.src = 'https://apis.google.com/js/plusone.js';
-                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                      })();
-                    </script>
-            
-               
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="YaronNaveh">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <!-- Place this tag where you want the +1 button to render. -->
+                        <div class="g-plusone" data-size="medium"></div>
+                        
+                        <!-- Place this tag after the last +1 button tag. -->
+                        <script type="text/javascript">
+                          (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                          })();
+                        </script>
+                    </div>
               
           </div>
      </div>
      
-     <div style="margin-top: 120px; overflow: hidden;">
+     <div style="margin-top: 50px; overflow: hidden;">
              <div style="float: right;">
-                  <div style="z-index: 99999; width: 400px;">
-                    
-                    <b>GifW00t!</b> is a pure-javascript web recorder. <br />
+                  <div style="float: left; "> <h1>Gifw00t! <span style="color: rgb(235, 164, 37);">Pacman</span></h1></div>
+                  
+                  <div style="z-index: 99999; width: 425px;">
+                    <div><b>GifW00t!</b> is a pure-javascript web recorder. Record any HTML, any site!</div>
                     <div style="margin-left: 20px; margin-top: 25px;">
-                    <b>1.</b> Click the record button (on top) <br />
-                    <b>2.</b> Click anywhere in the play surface to start a game <br />
-                    <b>3.</b> After your game click the stop button  <br />
+                    <b>1.</b> Click the record button (on top left) <br />
+                    <b>2.</b> Click on the game surface to start a game <br />
+                    <b>3.</b> Play a few seconds and click the stop button  <br />
+                    <b>4.</b> When the clip is ready click play to see it  <br />
                     <br />
-                    When the clip is ready click play to see it. In your first time, record just a few seconds so rendering is faster.
-                    <br /><br />
-                    You can use the <b>GifW00t!</b> recorder on any HTML, in any site, even sites written by other people!
-                    <br /><br />
-                    <b>More information: <a href="http://twitter.com/#!/YaronNaveh">@YaronNaveh</a>, <!--<a href="https://github.com/yaronn/anigif">github</a>,--> <a href="http://webservices20.blogspot.com/">blog</a></b>
-                    <br /><br />
-                    <a href="https://twitter.com/YaronNaveh" class="twitter-follow-button" data-show-count="false">Follow @YaronNaveh</a>
-                    <div>
-                        <div>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                        </div>
-                    </div>
                   </div>    
-                
-                    <br /><br />
+
+                                      
+                  <div style="margin-bottom: 14px;">
+                    <span style="font-size: large; font-weight: bold; color: rgb(235, 164, 37);">More Examples:</span> <a href="http://s3-us-west-2.amazonaws.com/anigif100/examples/helicopter/index.html">Helicopter</a>, <a href="http://s3-us-west-2.amazonaws.com/anigif100/examples/paint/paint.html">Paint</a>, <a href="http://s3-us-west-2.amazonaws.com/anigif100/examples/editor/editor.html">Editor</a>
+                  </div>
+                  
                     <div>
-                    <div style=" float: left; width: 220px;">
-                            <img id="demo10" width="150" /><br />  
+                    <div style=" float: left; width: 220px; margin-top: 20px;">
+                         <div style="margin-left: 10px;">
+                            <a href="https://twitter.com/YaronNaveh"><img height="27" id="twitter" style="margin-right: 8px; border-width: 0px" /></a>
+                            <a href="http://webservices20.blogspot.com/"><img height="32" id="blogger"style="margin-right: 8px; border-width: 0px" /></a>
+                            <a href="https://github.com/yaronn/GifW00t"><img height="35" id="github" style="border-width: 0px" /></a>
+                        </div>
+                            <img id="demo10" width="150" style="margin-top: 22px" /><br />  
                         </div>
                         <div style="float:right; width: 180px">
                             <img id="demo11" width="250" /><br />      
@@ -133,20 +141,16 @@
                     
                     <div style="clear: both; font-size: small">
                     <br />  
-                    Thanks <a href="https://twitter.com/daleharvey/">@daleharvey</a> for the original HTML5 pacman and helicopter!
+                    Created by <a href="https://twitter.com/YaronNaveh">@YaronNaveh</a>. Thanks <a href="https://twitter.com/daleharvey/">@daleharvey</a> for the HTML5 pacman!
                     </div>
                   </div>
                   
             </div>     
                 
-            <div style="float:left;">
+            <div style="float:left; margin-top: 65px;">
                 
                   <div id="pacman"></div>
-                  
-                  <div style="margin-top: 50px;">
-                    <span style="font-weight: bold; color: rgb(235, 164, 37);">More Examples:</span> <a href="http://s3-us-west-2.amazonaws.com/anigif100/examples/helicopter/index.html">Helicopter</a>, <a href="http://s3-us-west-2.amazonaws.com/anigif100/examples/paint/paint.html">Paint</a>, <a href="http://s3-us-west-2.amazonaws.com/anigif100/examples/editor/editor.html">Editor</a>
-                  </div>
-                  
+
                   
                   <script src="pacman.js"></script>
                   <script src="modernizr-1.5.min.js"></script>
@@ -163,6 +167,7 @@
                         "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
                     }
                   </script>
+                  
             </div>
     </div>
     

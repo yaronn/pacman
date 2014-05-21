@@ -1061,6 +1061,7 @@ var PACMAN = (function () {
 
         var extension = Modernizr.audio.ogg ? 'ogg' : 'mp3';
 
+        /*
         var audio_files = [
             ["start", root + "audio/opening_song." + extension],
             ["die", root + "audio/die." + extension],
@@ -1069,6 +1070,8 @@ var PACMAN = (function () {
             ["eating", root + "audio/eating.short." + extension],
             ["eating2", root + "audio/eating.short." + extension]
         ];
+        */
+        var audio_files = []
 
         load(audio_files, function() { loaded(); });
     };
